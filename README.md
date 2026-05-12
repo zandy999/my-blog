@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# 我的博客 - React Blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+一个现代化的 React 博客应用，具有响应式设计和优雅的用户界面。
 
-## Available Scripts
+## 🌟 功能特性
 
-In the project directory, you can run:
+- **博客布局**：上中下三层结构设计
+  - Header：展示博客标题和副标题
+  - Main：左侧导航菜单，右侧文章内容
+  - Footer：页脚信息
+  
+- **日历组件**：可交互的月度日历
+  - 支持月份切换
+  - 高亮显示当前日期
+  - 响应式设计
 
-### `npm start`
+- **文章管理**：基于接口的文章数据
+  - 文章列表导航
+  - 文章详情展示
+  - 分类标签
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 快速开始
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 环境要求
+- Node.js >= 14.0
+- npm >= 6.0
 
-### `npm test`
+### 安装和运行
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+\`\`\`bash
+npm install
+npm start
+npm run build  # 生产构建
+\`\`\`
 
-### `npm run build`
+访问 http://localhost:3000
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📁 项目结构
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+\`\`\`
+src/
+├── App.js              # 主应用组件
+├── App.css             # 应用样式
+├── Calendar.js         # 日历组件
+├── Calendar.css        # 日历样式
+├── api.js              # 接口模拟
+└── index.js            # 应用入口
+\`\`\`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔌 接口模拟
 
-### `npm run eject`
+所有数据接口定义在 \`src/api.js\`，支持快速与后端联调。
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🌐 GitHub Pages 部署步骤
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. 创建 GitHub 仓库：my-blog
+2. 在本地运行：
+   \`\`\`bash
+   git remote add origin https://github.com/zandy666/my-blog.git
+   git branch -M main
+   git push -u origin main
+   \`\`\`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. 在仓库 Settings > Pages 中：
+   - Source: Deploy from a branch
+   - Branch: main / (root)
+   - 点击 Save
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. 首次部署，运行：
+   \`\`\`bash
+   npm run build
+   git add build/
+   git commit -m "deploy: initial build"
+   git push
+   \`\`\`
 
-## Learn More
+GitHub Pages 会自动部署 \`build\` 文件夹。
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📝 许可证
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT License
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**作者**: [@zandy666](https://github.com/zandy666)
